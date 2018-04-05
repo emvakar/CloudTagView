@@ -150,9 +150,9 @@ open class TagView: UIView {
         }
     }
     
-    fileprivate let dismissView : UIView
-    fileprivate let icon : UIImageView
-    fileprivate let textLabel : UILabel
+    let dismissView : UIView
+    let icon : UIImageView
+    let textLabel : UILabel
     
     public override init(frame: CGRect) {
         dismissView = UIView()
@@ -240,7 +240,7 @@ open class TagView: UIView {
         dismissView.frame = CGRect(x: 0, y: 0, width: dismissLeft, height: tagHeight)
         
         frame = CGRect(x: Int(frame.origin.x), y: Int(frame.origin.y), width: tagWidth, height: tagHeight)
-        layer.cornerRadius = bounds.height/2
+        layer.cornerRadius = 5
     }
     
     // MARK: Actions
